@@ -1,0 +1,37 @@
+logging:
+  level: INFO
+  loggers:
+    realdoc: DEBUG
+    com.fasterxml.jackson: DEBUG
+    io.dropwizard: DEBUG
+    org.eclipse.jetty.server: INFO
+
+swagger:
+  resourcePackage: realdoc.api
+
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 19000
+  adminConnectors:
+  - type: http
+    port: 19001
+
+zipkin:
+
+  # Required properties
+  # Listening IP address of the service
+  # Listening port of the service
+
+  # Optional properties
+  # Span collector to use (scribe, logging, http, kafka or empty)
+  collector: http
+  # If using the scribe collector, provide the endpoint
+  #endpoint: 127.0.0.1:9411
+  # If using the http collector, provide the baseUrl
+  baseUrl: http://127.0.0.1:9411/
+
+serviceDependencies:
+  - srv1-impl
+  - srvA
