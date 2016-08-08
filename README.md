@@ -1,4 +1,6 @@
-# srv1
+#  Sample application to Demo multi module Dropwizard project with Zipkin , Feign Client and immutables.github.io library integration
+ 
+ 
 
 How to start the srv1 application
 ---
