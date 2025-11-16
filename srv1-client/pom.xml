@@ -22,7 +22,7 @@
 
     <properties>
 
-        <feign.version>9.0.0</feign.version>
+        <feign.version>11.7</feign.version>
     </properties>
 
     <dependencies>
